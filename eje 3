@@ -1,0 +1,23 @@
+class Empleado:
+    def __init__(self, nombre, apellido, salario):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.salario = salario
+
+class Gerente(Empleado):
+    def __init__(self, nombre, apellido, salario):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.salario = salario * 1.10
+
+class EmpleadoRegular(Empleado):
+    def __init__(self, nombre, apellido, salario):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.salario = salario
+
+gerente = Gerente("Mercedes", "Machuca", 50000)
+empleado_regular = EmpleadoRegular("Cesar", "Meza", 40000)
+
+print(f"Gerente - Nombre: {gerente.nombre}, Salario: {gerente.salario}")
+print(f"Empleado Regular - Nombre: {empleado_regular.nombre}, Salario: {empleado_regular.salario}")

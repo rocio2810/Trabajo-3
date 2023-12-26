@@ -1,0 +1,13 @@
+class Pajaro:
+    def volar(self):
+        print("El pájaro se encuantra volando.")
+
+class Aguila(Pajaro):
+    def volar(self):
+        print("El águila está volando a la velocidad máxima de 150 km/h.")
+        
+pajaro_generico = Pajaro()
+aguila = Aguila()
+
+pajaro_generico.volar()  
+aguila.volar()                
